@@ -234,6 +234,36 @@ console.log(message1);
 //テンプレート文字列を用いた方法
 var message2 = "\u79C1\u306E\u540D\u524D\u306F".concat(name, "\u3067\u3059\u3002\u5E74\u9F62\u306F").concat(age, "\u3067\u3059\u3002");
 console.log(message2);
+
+/**
+ *
+ * アロー関数
+ */
+//従来の関数
+// function func1(str) {
+//   return str;
+// }
+var func1 = function func1(str) {
+  return str;
+};
+console.log(func1("func1です"));
+
+//アロー関数
+var func2 = function func2(str) {
+  return str;
+};
+//一行の場合は下記でも同じ意味
+//const func2 = (str) => str;
+
+console.log(func2("func2です"));
+var func3 = function func3(num1, num2) {
+  return num1 + num2;
+};
+
+//下記も同値
+//const func3 = (num1, num2) => num1 + num2;
+
+console.log(func3(10, 20));
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
