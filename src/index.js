@@ -171,3 +171,13 @@ console.log(message3);
 const [name, age] = myProfile;
 const message4 = `名前は${name}です。年齢は${age}歳です`;
 console.log(message4);
+
+/**
+ * デフォルト値、引数など
+ */
+
+// const sayHello = (name) => console.log(`こんにちは！${name}さん！`);
+// sayHello("天星");
+
+// const sayHello = (name="天星") => console.log(`こんにちは！${name}さん！`);
+// sayHello("じゃけぇ");
